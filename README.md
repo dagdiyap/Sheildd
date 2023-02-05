@@ -16,24 +16,24 @@ Using this repository, you can replicate all results presented at ESORICS. We ou
 
 Before you can run any experiments, you must complete some setup:
 
-1) ```python3 generate_data_distribution.py``` This downloads the datasets, as well as generates a static distribution of the training and test data to provide consistency in experiments.
-2) ```python3 generate_default_models.py``` This generates an instance of all of the models used in the paper, and saves them to disk.
+1) ```python generate_data_distribution.py``` This downloads the datasets, as well as generates a static distribution of the training and test data to provide consistency in experiments.
+2) ```python generate_default_models.py``` This generates an instance of all of the models used in the paper, and saves them to disk.
 
 ### Experiments - Label Flipping Attack Feasibility
 
-Running an attack: ```python3 label_flipping_attack.py```
+Running an attack: ```python label_flipping_attack.py```
 
 ### Experiments - Attack Timing in Label Flipping Attacks
 
-Running an attack: ```python3 attack_timing.py```
+Running an attack: ```python attack_timing.py```
 
 ### Experiments - Malicious Participant Availability
 
-Running an attack: ```python3 malicious_participant_availability.py```
+Running an attack: ```python malicious_participant_availability.py```
 
 ### Experiments - Defending Against Label Flipping Attacks
 
-Running the defense: ```python3 defense.py```
+Running the defense: ```python defense.py```
 
 ### Experiment Hyperparameters
 
