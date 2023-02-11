@@ -15,7 +15,7 @@ from federated_learning.utils import generate_experiment_ids
 from federated_learning.utils import convert_results_to_csv
 
 from client import Client
-# 01723984200
+
 def train_subset_of_clients(epoch, args, clients, poisoned_workers):
     """
     Train a subset of clients per round.

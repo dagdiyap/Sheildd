@@ -33,7 +33,7 @@ class Arguments:
         self.round_worker_selection_strategy = None
         self.round_worker_selection_strategy_kwargs = None
 
-        self.save_model = False
+        self.save_model = True
         self.save_epoch_interval = 1
         self.save_model_path = "models"
         self.epoch_save_start_suffix = "start"

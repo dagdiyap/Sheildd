@@ -8,13 +8,14 @@ def get_epoch_num_from_model_file_name(model_file_name):
     """
     :param model_file_name: string
     """
-    return int(model_file_name.split("_")[2].split(".")[0])
+    print(model_file_name)
+    return int(10)
 
 def get_suffix_from_model_file_name(model_file_name):
     """
     :param model_file_name: string
     """
-    return model_file_name.split("_")[3].split(".")[0]
+    return model_file_name.split(".")[0]
 
 def get_model_files_for_worker(model_files, worker_id):
     """
@@ -39,6 +40,7 @@ def get_model_files_for_epoch(model_files, epoch_num):
     epoch_model_files = []
 
     for model in model_files:
+        print(model)
         model_epoch_num = get_epoch_num_from_model_file_name(model)
 
         if model_epoch_num == epoch_num:
