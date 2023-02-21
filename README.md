@@ -1,16 +1,40 @@
-# Data Poisoning Attacks Against Federated Learning Systems
+# Inter IIT Tech Meet 11 GradCapital 
 
-Based on ESORICS 2020 paper
+## Problem Statement
 
-## Installation
+#### To create a novel deeptech startup that tackles real world problems from a new technical perspective.
+
+## Solution 
+
+### Our solution is a product-based software application that protects companies from ML attacks aimed at stealing their models, data or changing the logic of the ML system, by
+### &emsp; &emsp; ● Scoring models based on their vulnerability to attacks
+### &emsp; &emsp; ● Recommending defense mechanism against the attacks
+### &emsp; &emsp; ● Implementing the defense mechanisms for the organization
+
+###
+
+# Approach
+
+#### 1) Learn Differnt ART attacks from resarch papers and IBM art tools
+
+#### 2) Fedrated Learning was chosen to preform the attacks for this project 
+
+#### 3) Trained custom image recognition models to preform to be used in the project 
+
+#### 4) Implemnted code to courrupt a random subset of given dataset 
+
+#### 5) Created scripts to messure the impact of the attacks 
+
+<br/>
+
+
+
+
+## Working
 
 1) Create a virtualenv (Python 3.7)
 2) Install dependencies inside of virtualenv (```pip install -r requirements.pip```)
 3) If you are planning on using the defense, you will need to install ```matplotlib```. This is not required for running experiments, and is not included in the requirements file
-
-## Instructions for execution
-
-Using this repository, you can replicate all results presented at ESORICS. We outline the steps required to execute different experiments below.
 
 ### Setup
 
@@ -19,23 +43,23 @@ Before you can run any experiments, you must complete some setup:
 1) ```python generate_data_distribution.py``` This downloads the datasets, as well as generates a static distribution of the training and test data to provide consistency in experiments.
 2) ```python generate_default_models.py``` This generates an instance of all of the models used in the paper, and saves them to disk.
 
-### Experiments - Label Flipping Attack Feasibility
+### Label Flipping Attack Feasibility
 
 Running an attack: ```python label_flipping_attack.py```
 
-### Experiments - Attack Timing in Label Flipping Attacks
+### Attack Timing in Label Flipping Attacks
 
 Running an attack: ```python attack_timing.py```
 
-### Experiments - Malicious Participant Availability
+### Malicious Participant Availability
 
 Running an attack: ```python malicious_participant_availability.py```
 
-### Experiments - Defending Against Label Flipping Attacks
+### Defending Against Label Flipping Attacks
 
 Running the defense: ```python defense.py```
 
-### Experiment Hyperparameters
+### Hyperparameters
 
 Recommended default hyperparameters for CIFAR10 (using the provided CNN):
 - Batch size: 10
@@ -55,3 +79,10 @@ Recommended default hyperparameters for Fashion-MNIST (using the provided CNN):
 - Scheduler gamma: 0.1
 - Min_lr: 1e-10
 
+# Achivement
+
+### The Project Recived Silver Medal 
+
+# Result
+
+### A platform was successfully presented software application that protects companies from ML attacks, by scoring thier models and also locating its most weekest spot, leading to Silver Medal in Grad Capital PS-4 of Inter IIT Tech Meet 11 helping Institute to Bag an overall Silver Medal among the best tecnical institues of India.
