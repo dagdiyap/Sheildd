@@ -1,6 +1,6 @@
 # Data Poisoning Attacks Against Federated Learning Systems
 
-Code for the ESORICS 2020 paper: Data Poisoning Attacks Against Federated Learning Systems
+Based on ESORICS 2020 paper
 
 ## Installation
 
