@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sheildd-backend"
+version = "0.1.0"
+description = ""
+authors = ["pranav"]
+license = "mit"
+readme = "README.md"
+packages = [{include = "sheildd_backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^4.1.7"
+loguru = "0.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
