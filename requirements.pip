@@ -1,3 +1,12 @@
 loguru==0.3.2
 scikit-learn==0.21.3
 numpy==1.17.0
+
+
+
+loguru==0.3.2
+poetry add matplotlib==3.4.2
+poetry add numpy==1.17.0
+poetry add scikit_learn==1.2.1
+pip install torch==1.11.0
+pip install torchvision==0.12.0
