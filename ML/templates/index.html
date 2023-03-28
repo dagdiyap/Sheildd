@@ -1,13 +1,10 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends 'base.html' %} {% load static %}
 <link rel="stylesheet" href="{% static 'css/landing.css' %}" />
 {% block content %}
 <div class="mainScreen">
-    <div class="loginParentContainer">
-        Login to Continue
-    </div>
-    <div class="icon">
+  <div class="loginParentContainer">Login to Continue</div>
+  <div class="icon">
     <img class="gitIcon" src="{% static 'icon.webp' %}" />
-</div>
+  </div>
 </div>
 {% endblock %}

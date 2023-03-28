@@ -25,7 +25,8 @@
   color: #ffffff;
 }
 .gitIcon {
-  width: 15rem;
+  width: 30rem;
   height: 15rem;
-  margin: auto;
+  margin-top: 20rem;
+  max-width: 30rem;
 }
