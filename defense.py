@@ -76,29 +76,29 @@ if __name__ == '__main__':
     print(EPOCHS)
     logger.info("Loading models...")
     logger.info("Locating courrupt files...")
-    # for epoch in EPOCHS:
-    #     start_model_files = get_model_files_for_epoch(model_files, epoch)
-    #     start_model_file = get_model_files_for_suffix(start_model_files, args.get_epoch_save_start_suffix())[0]
-    #     start_model_file = os.path.join(MODELS_PATH, start_model_file)
-    #     start_model = load_models(args, [start_model_file])[0]
+    for epoch in EPOCHS:
+        start_model_files = get_model_files_for_epoch(model_files, epoch)
+        start_model_file = get_model_files_for_suffix(start_model_files, args.get_epoch_save_start_suffix())[0]
+        start_model_file = os.path.join(MODELS_PATH, start_model_file)
+        start_model = load_models(args, [start_model_file])[0]
 
-    #     start_model_layer_param = list(get_layer_parameters(start_model.get_nn_parameters(), LAYER_NAME)[CLASS_NUM])
+        start_model_layer_param = list(get_layer_parameters(start_model.get_nn_parameters(), LAYER_NAME)[CLASS_NUM])
 
-    #     end_model_files = get_model_files_for_epoch(model_files, epoch)
-    #     end_model_files = get_model_files_for_suffix(end_model_files, args.get_epoch_save_end_suffix())
+        end_model_files = get_model_files_for_epoch(model_files, epoch)
+        end_model_files = get_model_files_for_suffix(end_model_files, args.get_epoch_save_end_suffix())
 
-    #     for end_model_file in end_model_files:
-    #         worker_id = get_worker_num_from_model_file_name(end_model_file)
-    #         end_model_file = os.path.join(MODELS_PATH, end_model_file)
-    #         end_model = load_models(args, [end_model_file])[0]
+        for end_model_file in end_model_files:
+            worker_id = get_worker_num_from_model_file_name(end_model_file)
+            end_model_file = os.path.join(MODELS_PATH, end_model_file)
+            end_model = load_models(args, [end_model_file])[0]
 
-    #         end_model_layer_param = list(get_layer_parameters(end_model.get_nn_parameters(), LAYER_NAME)[CLASS_NUM])
+            end_model_layer_param = list(get_layer_parameters(end_model.get_nn_parameters(), LAYER_NAME)[CLASS_NUM])
 
-    #         gradient = calculate_parameter_gradients(logger, start_model_layer_param, end_model_layer_param)
-    #         gradient = gradient.flatten()
+            gradient = calculate_parameter_gradients(logger, start_model_layer_param, end_model_layer_param)
+            gradient = gradient.flatten()
 
-    #         param_diff.append(gradient)
-    #         worker_ids.append(worker_id)
+            param_diff.append(gradient)
+            worker_ids.append(worker_id)
 
     
     logger.info("Percentage of courrupt files found gradients shape: {}%".format(5))

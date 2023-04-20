@@ -1,4 +1,3 @@
-
 import time as t
 from loguru import logger
 from federated_learning.arguments import Arguments

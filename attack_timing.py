@@ -4,7 +4,8 @@ from federated_learning.utils import replace_1_with_9
 from federated_learning.utils import replace_4_with_6
 from federated_learning.utils import replace_1_with_3
 from federated_learning.utils import replace_6_with_0
-from federated_learning.worker_selection import BeforeBreakpoint
+
+# from federated_learning.worker_selection import BeforeBreakpoint
 from federated_learning.worker_selection import AfterBreakpoint
 from server import run_exp
 

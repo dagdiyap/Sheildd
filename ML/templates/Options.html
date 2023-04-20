@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% load static %}
+<link rel="stylesheet" href="{% static 'css/display.css' %}" />
+{% block content %}
+<div class="screenContainer">
+  <div class="halfScreen">
+    <div class="halfScreenTitle">Use Saved Models</div>
+    <div class="listContainer">
+      {% for i in Lister %}
+      <div class="listItem">{{i}}</div>
+      {% endfor %}
+      <button class="button" >
+        View All
+      </button>
+    </div>
+  </div>
+  <div class="halfScreen">
+    <div class="halfScreenTitle">Create New Models</div>
+    <input
+    type="text"
+    name="desc"
+    class="custom-input"
+    id="description"
+    placeholder="Name"
+  />
+  </div>
+</div>
+{% endblock %}

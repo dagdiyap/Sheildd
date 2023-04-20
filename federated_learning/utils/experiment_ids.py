@@ -1,12 +1,6 @@
 def generate_experiment_ids(start_idx, num_exp):
-    """
-    Generate the filenames for all experiment IDs.
-
-    :param start_idx: start index for experiments
-    :type start_idx: int
-    :param num_exp: number of experiments to run
-    :type num_exp: int
-    """
+   
+   
     log_files = []
     results_files = []
     models_folders = []

@@ -24,9 +24,24 @@
   text-align: center;
   color: #ffffff;
 }
+.icon {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+}
 .gitIcon {
-  width: 30rem;
+  width: 18rem;
   height: 15rem;
   margin-top: 20rem;
-  max-width: 30rem;
+  cursor: pointer;
+}
+.custom-input {
+  width:65% ;
+  margin-left: 17.5%;
+  height: 35px;
+  background: transparent;
+  border: 1px solid #474e5e;
+  border-radius: 6px;
+  margin-top: 10%;
+  padding-left:5% ;
 }
