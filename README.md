@@ -87,4 +87,4 @@ Recommended default hyperparameters for Fashion-MNIST (using the provided CNN):
 
 ### A platform was successfully presented software application that protects companies from ML attacks, by scoring thier models and also locating its most weekest spot, leading to Silver Medal in Grad Capital PS-4 of Inter IIT Tech Meet 11 helping Institute to bag an overall Silver Medal among the best tecnical institues of India.
 
-## Link to project proposal : https://docs.google.com/document/d/1BfJqMpHFVHIcKBcGqRqjRBdkkvP_V5Od4iLT2AeTn1A/edit?usp=sharing 
+## Link to project proposal : https://drive.google.com/file/d/1-isEPgu8q5lQzDZtPQ_hxOea3DDIWPO5/view?usp=sharing 
